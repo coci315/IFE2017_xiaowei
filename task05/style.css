@@ -1,0 +1,188 @@
+/*base*/
+.clearfix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+h1,h2,h3,body,ul{
+    margin: 0;
+    padding: 0;
+}
+a{text-decoration: none;}
+body{font-family: "微软雅黑";}
+ul li{list-style-type: none;}
+.fl{float: left;}
+.fr{float: right;}
+
+
+
+.header,.footer{
+    width: 100%;
+    margin: 0 auto;
+}
+.header,.footer{
+    background: #337AB7;
+    height: 60px;
+}
+.header h1{
+    float: left;
+    line-height: 60px;
+    font-size: 30px;
+    color: #f00;
+    margin-left: 20px;
+}
+.header ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+.header ul li,.header li a{
+    display: inline-block;
+    margin-left: 10px;
+}
+.header li a:link{
+    line-height: 60px;
+    color: #fff;
+}
+.header li a:visited{
+    color: #ccc;
+}
+.header li a:hover{
+    text-decoration: underline;
+    color: #f00;
+}
+.body{
+    background: #ccc;
+    padding: 20px 0;
+}
+.article,.side{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #989898;
+    background: #fff;
+}
+.article:first-child{
+    margin-top: 0;
+}
+.article h2{
+    margin: 20px 0;
+}
+.article h3{
+    font-weight: normal;
+    color: #aaa;
+}
+.article span{
+    color: #aaa;
+    font-size: 12px;
+}
+.article p{
+    font-size: 16px;
+    text-indent: 2em;
+}
+.article p:first-of-type{
+    text-indent: 0;
+}
+.article p a:link,.article p a:visited{
+    color: #00f;
+}
+.article p a:hover{
+    text-decoration: underline;
+}
+.article img{
+    width: 20%;
+}
+.article .piclist li{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+}
+.article .piclist li p{
+    text-indent: 0;
+}
+.article .piclist li img{
+    width: 180px;
+}
+.article table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.article table thead{
+    background: #337AB7;
+    color: #fff;
+}
+.article table tfoot{
+    background: #aaa;
+    font-weight: bold;
+}
+.article table td{
+    border: 1px solid #ccc;
+}
+.main{
+    margin-right: 420px;
+   /* min-width: 400px;*/
+}
+.side{
+    width: 358px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.side h2{
+    font-size: 16px;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border-left: 4px solid #ccc;
+}
+.side form{
+    font-size: 12px;
+}
+.side input,.side select{
+    font-size: 12px;
+}
+.side p{
+    color: #ccc;
+    margin-left: 110px;
+}
+.side form>div{
+    width: 100%;
+  /*  background: blue;*/
+   /* border: 1px solid red;*/
+   margin: 10px auto;
+}
+.side form .left{
+    float: left;
+    width: 100px;
+    text-align: right;
+}
+.side form .right{
+    float: left;
+    margin-left: 10px;
+}
+.side form .submitbtn{
+    width: 100%;
+    height: 40px;
+    background: #3355D0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+
+}
+.side form textarea{
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer{
+    line-height: 60px;
+    text-align: center;
+    margin-top: -20px;
+}
