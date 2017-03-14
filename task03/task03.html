@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度前端技术学院-小薇学院-任务三：三栏式布局</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+        .clearfix:after {
+            content: ".";
+            display: block;
+            clear: both;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+        }
+        
+        .body {
+            margin: 20px;
+            padding: 20px;
+            background: #eee;
+            border: 1px solid #999;
+        }
+        
+        .leftside,
+        .main,
+        .rightside {
+            border: 1px solid #999;
+            background: #fff;
+        }
+        
+        .leftside {
+            width: 178px;
+            padding: 10px;
+        }
+        
+        .fl {
+            float: left;
+        }
+        
+        .fr {
+            float: right;
+        }
+        
+        .leftside p {
+            margin-left: 20px;
+        }
+        
+        .main {
+            padding: 20px;
+            margin-left: 220px;
+            margin-right: 140px;
+        }
+        
+        .rightside {
+            width: 78px;
+            padding: 20px;
+        }
+        
+        .rightside img {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body clearfix">
+        <div class="leftside clearfix fl">
+            <img class="fl" src="http://h.hiphotos.baidu.com/zhidao/pic/item/8601a18b87d6277fd9bdcb1a2b381f30e924fc61.jpg" alt="teamlogo"
+                width="80" height="80">
+            <p class="fl">团队名称</p>
+        </div>
+        <div class="rightside fr">
+            <img src="http://h.hiphotos.baidu.com/zhidao/pic/item/8601a18b87d6277fd9bdcb1a2b381f30e924fc61.jpg" alt="logo" width="80"
+                height="80">
+            <img src="http://h.hiphotos.baidu.com/zhidao/pic/item/8601a18b87d6277fd9bdcb1a2b381f30e924fc61.jpg" alt="logo" width="80"
+                height="80">
+            <img src="http://h.hiphotos.baidu.com/zhidao/pic/item/8601a18b87d6277fd9bdcb1a2b381f30e924fc61.jpg" alt="logo" width="80"
+                height="80">
+            <img src="http://h.hiphotos.baidu.com/zhidao/pic/item/8601a18b87d6277fd9bdcb1a2b381f30e924fc61.jpg" alt="logo" width="80"
+                height="80">
+        </div>
+        <!-- 注意点：中间的结构main需要写在最后面，把leftside跟rightside写在main的前面，对leftside与rightside分别进行左浮动右浮动，而main无需浮动，只需设置margin-left和margin-right值 -->
+        <div class="main">
+            <h2>关于团队的介绍</h2>
+            <p>一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍</p>
+            <h2>关于团队的介绍</h2>
+            <p>一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍</p>
+            <p>一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍一段介绍</p>
+        </div>
+    </div>
+</body>
+
+</html>
