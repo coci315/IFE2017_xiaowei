@@ -1,0 +1,803 @@
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th {
+  text-align: left;
+  font-weight: normal;
+}
+
+html, body, fieldset, img, iframe, abbr {
+  border: 0;
+}
+
+i, cite, em, var, address, dfn {
+  font-style: normal;
+}
+
+[hidefocus], summary {
+  outline: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, small {
+  font-size: 100%;
+}
+
+sup, sub {
+  font-size: 83%;
+}
+
+pre, code, kbd, samp {
+  font-family: inherit;
+}
+
+q:before, q:after {
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+label, summary {
+  cursor: default;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, em, strong, b {
+  font-weight: normal;
+}
+
+del, ins, u, s, a, a:hover {
+  text-decoration: none;
+}
+
+body, textarea, input, button, select, keygen, legend {
+  font: 12px/1.14 arial,simsun;
+  color: #333;
+  outline: 0;
+}
+
+body {
+  background: #fff;
+}
+
+a, a:hover {
+  color: #333;
+}
+
+body {
+  min-width: 1280px;
+  background: #fff;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.g-hd {
+  height: 56px;
+}
+
+.m-logo {
+  margin-left: 5%;
+  height: 56px;
+  line-height: 56px;
+  font-family: 'simhei';
+  font-size: 21px;
+}
+
+.m-logo a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.m-logo a:before {
+  content: ' ';
+  display: inline-block;
+  width: 31px;
+  height: 56px;
+  vertical-align: top;
+  background: url(../images/logo.png) 0 12px no-repeat;
+}
+
+.g-hd_wrap {
+  margin-right: 5%;
+}
+
+.g-hd_wrap a {
+  font: 14px/52px 'microsoft yahei';
+  color: #787b83;
+}
+
+.g-hd_wrap a:hover {
+  color: #e8504e;
+}
+
+.m-nav li {
+  float: left;
+}
+
+.m-nav li a {
+  display: inline-block;
+  border-bottom: 4px solid transparent;
+  width: 66px;
+  text-align: center;
+}
+
+.m-nav li a:hover {
+  border-bottom-color: #e8504e;
+}
+
+.m-nav li + li > a {
+  margin-left: 10px;
+}
+
+.m-login {
+  margin-left: 28px;
+}
+
+.m-login a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.m-login a:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 56px;
+  background: url(../images/login.png) 0 17px no-repeat;
+}
+
+.m-banner {
+  height: 690px;
+  padding: 1px;
+  background: url(../images/banner.jpg) 0 0/cover no-repeat;
+}
+
+.banner_text {
+  margin-left: 9%;
+  margin-top: 230px;
+  font-family: 'microsoft yahei';
+  color: #fff;
+}
+
+.banner_text h2 {
+  margin-bottom: 30px;
+  font-size: 60px;
+}
+
+.banner_text p {
+  margin-bottom: 66px;
+  padding: 4px;
+  width: 295px;
+  font-size: 21px;
+  line-height: 29px;
+}
+
+.banner_text a {
+  display: inline-block;
+  width: 332px;
+  height: 66px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 66px;
+  text-align: center;
+  background-color: #e8504e;
+}
+
+.g-bd_wrap {
+  width: 1280px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.m-slogan {
+  display: inline-block;
+  width: 320px;
+  height: 250px;
+}
+
+.m-slogan .icon {
+  height: 132px;
+  background: url(../images/icon01.png) 50% 50% no-repeat;
+}
+
+.m-slogan .icon.icon02 {
+  background-image: url(../images/icon02.png);
+}
+
+.m-slogan .icon.icon03 {
+  background-image: url(../images/icon03.png);
+}
+
+.m-slogan .icon.icon04 {
+  background-image: url(../images/icon04.png);
+}
+
+.m-slogan .text {
+  box-sizing: border-box;
+  border-right: 2px solid #bbbbbc;
+  width: 320px;
+  height: 52px;
+}
+
+.m-slogan .text.last {
+  border-right: none;
+}
+
+.m-slogan p {
+  width: 154px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.m-question {
+  height: 360px;
+  background-color: #edecec;
+}
+
+.m-question .logo {
+  height: 180px;
+  background: url(../images/logo_large.png) center bottom no-repeat;
+}
+
+.m-question p {
+  margin-top: 50px;
+  text-align: center;
+  font: 54px/1 'simhei';
+  color: #a1a1a1;
+}
+
+.m-search {
+  height: 342px;
+  padding: 1px;
+  background: url(../images/map.jpg) 0 0/cover no-repeat;
+}
+
+.search_form {
+  width: 1030px;
+  margin: 52px auto 0;
+  font-family: 'microsoft yahei';
+  color: #fff;
+}
+
+.search_form h2 {
+  position: relative;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 21px;
+}
+
+.search_form h2:after {
+  position: absolute;
+  top: 33px;
+  left: 500px;
+  content: '';
+  width: 31px;
+  border-top: 3px solid #fff;
+}
+
+.search_form p {
+  margin-bottom: 52px;
+  text-align: center;
+  font-size: 12px;
+  opacity: .8;
+}
+
+.search_form_btns {
+  font-size: 0;
+}
+
+.search_form_btns a.btn {
+  display: inline-block;
+  width: 236px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #be4e48;
+  text-align: center;
+}
+
+.dropdown {
+  display: inline-block;
+  vertical-align: top;
+  width: 236px;
+  margin-right: 26px;
+  font-size: 12px;
+  color: #a8aaaa;
+}
+
+.dropdown.active {
+  border: 1px solid #be4e48;
+}
+
+.dropdown button {
+  position: relative;
+  width: 236px;
+  height: 36px;
+  text-align: left;
+  text-indent: 12px;
+  color: #a8aaaa;
+  background-color: #fff;
+  border: none;
+}
+
+.dropdown button span {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 18px;
+  height: 18px;
+  background-color: #be4e48;
+}
+
+.dropdown button span:after {
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  content: ' ';
+  width: 8px;
+  height: 8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.dropdown ul {
+  background-color: #e4e3e5;
+}
+
+.dropdown ul a {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  text-indent: 32px;
+  color: #323333;
+}
+
+.dropdown ul a:hover, .dropdown ul a.active {
+  background-color: #be4e48;
+  color: #fff;
+}
+
+.dropdown ul a:hover:before, .dropdown ul a.active:before {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  content: '\2713';
+}
+
+.g-bd_wrap2 {
+  padding: 1px;
+  height: 604px;
+  background-color: #f7f7f7;
+}
+
+.m-events {
+  margin: 100px auto 0;
+  width: 992px;
+  height: 390px;
+  font-size: 0;
+}
+
+.m-events .m-event + .m-event {
+  margin-left: 36px;
+}
+
+.m-events .m-event {
+  display: inline-block;
+  text-align: center;
+  font-family: 'microsoft yahei';
+}
+
+.m-events .m-event img {
+  border: 1px solid #dedede;
+  border-bottom: none;
+}
+
+.m-events .m-event h3 {
+  margin: 12px 0;
+  font-size: 14px;
+  color: #323333;
+}
+
+.m-events .m-event p {
+  font-size: 12px;
+  color: #818282;
+}
+
+.m-events .m-event2 h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 22px;
+}
+
+.m-events .m-event2 p {
+  margin-bottom: 10px;
+}
+
+.m-info {
+  width: 1280px;
+  height: 566px;
+  margin: 0 auto;
+}
+
+.info_img img {
+  display: block;
+}
+
+.info_text {
+  width: 430px;
+  padding-top: 165px;
+  font-family: 'microsoft yahei';
+  text-align: center;
+}
+
+.info_text h2 {
+  font-size: 20px;
+}
+
+.info_text h2 span {
+  color: #e74f4d;
+}
+
+.info_text p {
+  width: 288px;
+  margin: 30px auto 48px;
+  text-align: left;
+  font-family: 'simsun';
+  font-size: 12px;
+  line-height: 30px;
+  color: #aaa;
+}
+
+.info_text a.btn {
+  display: inline-block;
+  width: 106px;
+  height: 34px;
+  margin-bottom: 24px;
+  border: 1px solid #e74f4d;
+  font-size: 12px;
+  line-height: 34px;
+  color: #e74f4d;
+}
+
+.info_text .ctrl {
+  width: 62px;
+  height: 10px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.info_text .ctrl li + li {
+  margin-left: 13px;
+}
+
+.info_text .ctrl li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #929293;
+  border-radius: 50%;
+}
+
+.info_text .ctrl li.active {
+  background-color: #929293;
+}
+
+.m-intro {
+  width: 1280px;
+  height: 521px;
+  margin: 0 auto;
+}
+
+.intro_text {
+  width: 425px;
+  height: 356px;
+  padding-top: 165px;
+  font-family: 'simhei';
+  text-align: center;
+}
+
+.intro_text h2 {
+  width: 168px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.intro_text span {
+  display: block;
+  margin: 22px auto;
+  width: 32px;
+  border-top: 3px solid #fff;
+}
+
+.intro_text a.btn {
+  display: inline-block;
+  width: 168px;
+  height: 42px;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 21px;
+  line-height: 42px;
+  color: #fff;
+}
+
+.intro_text1 {
+  background-color: #e74f4d;
+  color: #fff;
+}
+
+.intro_text2 span {
+  border-color: #aaa;
+}
+
+.intro_text2 a.btn {
+  color: #e74f4d;
+  border-color: #e74f4d;
+}
+
+.intro_img img {
+  display: block;
+}
+
+.m-volunteer {
+  width: 1010px;
+  height: 750px;
+  margin: 0 auto;
+  padding: 1px;
+}
+
+.volunteer-text {
+  text-align: center;
+  width: 422px;
+  margin: 118px auto 106px;
+}
+
+.volunteer-text h2 {
+  font: 21px/30px 'simhei';
+  color: #323333;
+}
+
+.volunteer-text span {
+  display: block;
+  margin: 10px auto;
+  width: 32px;
+  border-top: 3px solid #e74f4d;
+}
+
+.volunteer-text p {
+  font: 12px/18px 'microsoft yahei';
+  color: #aaa;
+}
+
+.clause {
+  width: 290px;
+}
+
+.m-clause {
+  margin-bottom: 20px;
+}
+
+.m-clause h3 {
+  font: 14px/1 'simhei';
+  color: #231815;
+  opacity: .8;
+}
+
+.m-clause p {
+  margin: 24px 0 10px;
+  font: 12px/21px 'simsun';
+  color: #231815;
+  opacity: .6;
+}
+
+.m-clause a {
+  position: relative;
+  float: right;
+  font: 12px/19px 'simsun';
+  color: #231815;
+  opacity: .6;
+}
+
+.m-clause a:before {
+  position: absolute;
+  left: -12px;
+  top: 6px;
+  content: ' ';
+  width: 4px;
+  height: 4px;
+  border-left: 1px solid #231815;
+  border-bottom: 1px solid #231815;
+  transform: rotate(-45deg);
+}
+
+.volunteer-form form {
+  width: 640px;
+}
+
+.volunteer-form form .form_row {
+  margin-bottom: 12px;
+}
+
+.volunteer-form form input {
+  width: 310px;
+  height: 40px;
+  border: none;
+  background-color: #ededee;
+  text-indent: 50px;
+}
+
+.volunteer-form form input::-webkit-input-placeholder {
+  text-indent: 16px;
+  font: 12px/1 'simsun';
+  color: #231815;
+  opacity: .8;
+}
+
+.volunteer-form form .second_row input {
+  text-indent: 72px;
+}
+
+.volunteer-form form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+  padding: 10px 16px;
+  border: none;
+  background-color: #ededee;
+  font: 12px/1 'simsun';
+  color: #231815;
+  opacity: .8;
+}
+
+.volunteer-form form button {
+  width: 100%;
+  height: 40px;
+  margin-top: 12px;
+  border: none;
+  background-color: #ededee;
+  font: 14px/1 'simhei';
+}
+
+.m-contact {
+  height: 360px;
+  padding: 1px;
+  background-color: #32353e;
+}
+
+.contact_wrap {
+  width: 512px;
+  margin: 90px auto 0;
+  color: #fff;
+  text-align: center;
+}
+
+.contact_wrap h2 {
+  font: 21px/48px 'simhei';
+}
+
+.contact_wrap p {
+  margin-bottom: 30px;
+  font: 12px/18px 'simsun';
+}
+
+.contact_wrap .submit {
+  font-family: 'microsoft yahei';
+}
+
+.contact_wrap .submit input {
+  box-sizing: border-box;
+  width: 430px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.contact_wrap .submit button {
+  width: 80px;
+  height: 40px;
+  border: none;
+  background-color: #6f7177;
+  font-size: 15px;
+  color: #fff;
+}
+
+.contact_wrap .contact_methods {
+  width: 180px;
+  height: 25px;
+  margin: 36px auto 0;
+  font-size: 0;
+}
+
+.contact_wrap .contact_methods li,
+.contact_wrap .contact_methods a {
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+}
+
+.contact_wrap .contact_methods li + li {
+  margin-left: 20px;
+}
+
+.contact_wrap .contact_methods a {
+  background: url(../images/logo_qq.png) 50% 0 no-repeat;
+}
+
+.contact_wrap .contact_methods a.weibo {
+  background-image: url(../images/logo_weibo.png);
+}
+
+.contact_wrap .contact_methods a.twitter {
+  background-image: url(../images/logo_twitter.png);
+}
+
+.contact_wrap .contact_methods a.web {
+  background-image: url(../images/logo_web.png);
+}
+
+.m-footer {
+  height: 60px;
+  background-color: #303039;
+  padding: 1px;
+}
+
+.footer_wrap {
+  margin: 26px auto;
+  font: 12px/23px 'simsun';
+  color: #fff;
+}
+
+.footer_wrap span {
+  margin-left: 8%;
+}
+
+.footer_wrap a {
+  margin-right: 8%;
+  color: #fff;
+}
