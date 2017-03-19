@@ -1,0 +1,92 @@
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrap {
+  width: 350px;
+  margin: 0 auto;
+}
+
+table {
+  text-align: left;
+  margin: 0 auto;
+}
+
+thead th {
+  background-color: #000;
+  color: #fff;
+}
+
+tbody tr:nth-child(even)>td {
+  background-color: #ccc;
+}
+
+tbody tr:nth-child(1),
+tbody tr:nth-child(2),
+tbody tr:nth-child(3) {
+  color: #f00;
+}
+
+.box1 {
+  margin: 20px auto;
+  width: 100px;
+  height: 21px;
+  border: 1px solid #ccc;
+  box-shadow: -1px 1px 1px 0 #ccc, inset -1px 1px 1px 0 #ccc;
+}
+
+.box2 {
+  margin: 20px auto;
+  width: 200px;
+  height: 24px;
+  border: 2px solid #75b1f4;
+  border-radius: 2px;
+  box-shadow: 0 0 3px 1px #75b1f4, inset 0 0 0px 1px #75b1f4;
+}
+
+.box {
+  position: relative;
+  width: 270px;
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: #008200;
+}
+
+.box ul {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.box ul li {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, .5);
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+}
+
+.box5 {
+  background-color: #0001fe;
+}
+
+.box5 ul li {
+  background-color: rgba(123, 122, 255, .5);
+}
+
+.child_box {
+  width: 50%;
+  height: 100%;
+  background-color: #0001fe;
+}
