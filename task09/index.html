@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>百度前端技术学院-小薇学院-任务九：使用HTML/CSS实现一个复杂页面</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="g-hd clearfix">
+    <div class="logo fl"></div>
+    <div class="m-login fr">
+      <span class="icon btn_search"></span>
+      <input type="text" class="search">
+      <span class="icon icon_login"></span>
+      <span class="text">登录</span>
+    </div>
+  </div>
+  <div class="g-bd clearfix">
+    <div class="m-profile fl">
+      <div class="profile_head">
+        <div class="avatar">
+          <div class="avatar_inner"></div>
+        </div>
+        <span class="name">ABC123</span>
+      </div>
+      <div class="profile_count clearfix">
+        <div class="fav fl">
+          <span class="num">110</span>
+          <span>收藏</span>
+        </div>
+        <div class="fan fl">
+          <span class="num">313</span>
+          <span>粉丝</span>
+        </div>
+      </div>
+      <div class="profile_floder active">
+        <span class="icon icon_table"></span>
+        <h3>个人报表</h3>
+        <ul class="floder_list">
+          <li class="floder">
+            <span class="icon icon_right_arrow"></span>
+            <span class="icon icon_file"></span>
+            <h4>文件一</h4>
+          </li>
+          <li class="floder active">
+            <span class="icon icon_right_arrow"></span>
+            <span class="icon icon_file"></span>
+            <h4>文件二</h4>
+            <ul class="file_list">
+              <li class="file active">
+                <span class="icon icon_doc"></span>
+                <h5>文档1</h5>
+              </li>
+              <li class="file">
+                <span class="icon icon_doc"></span>
+                <h5>文档1</h5>
+              </li>
+            </ul>
+          </li>
+          <li class="floder">
+            <span class="icon icon_right_arrow"></span>
+            <span class="icon icon_file"></span>
+            <h4>文件三</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="profile_floder">
+        <span class="icon icon_fav"></span>
+        <h3>个人收藏</h3>
+      </div>
+      <div class="profile_floder">
+        <span class="icon icon_share"></span>
+        <h3>我的分享</h3>
+      </div>
+      <div class="profile_floder">
+        <span class="icon icon_fav"></span>
+        <h3>图库</h3>
+      </div>
+      <div class="profile_floder">
+        <span class="icon icon_fav"></span>
+        <h3>成长记录</h3>
+      </div>
+      <div class="profile_floder">
+        <span class="icon icon_account"></span>
+        <h3>账户信息</h3>
+      </div>
+    </div>
+    <div class="m-detail fl">
+      <div class="detail_head">
+        <p class="path"><a href="#">C站</a>/<a href="#">个人报表</a>/<a href="#">文件一</a>/<a href="#" class="active">文档一</a></p>
+      </div>
+      <div class="wrap">
+        <div class="detail_search clearfix">
+          <div class="search_item1 fl">
+            <span class="item">查询项</span>
+            <div class="select active">
+              <p>第一项</p>
+              <ul>
+                <li class="active">第一项</li>
+                <li>第二项</li>
+                <li>第三项</li>
+              </ul>
+            </div>
+          </div>
+          <div class="search_item2 fl">
+            <div class="row">
+              <span class="item">买方</span>
+              <div class="select">
+                <p>小A</p>
+                <ul>
+                  <li class="active">小A</li>
+                  <li>小B</li>
+                  <li>小C</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <span class="item">卖方</span>
+              <div class="select">
+                <p>小C</p>
+                <ul>
+                  <li>小A</li>
+                  <li>小B</li>
+                  <li class="active">小C</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="icon icon_change fl"></div>
+          <div class="search_item3 fl">
+            <div class="row1 clearfix">
+              <div class="col1 fl">
+                <span class="item">日期</span>
+                <div class="select">
+                  <p>2016-04-01</p>
+                  <ul>
+                    <li class="active">2016-04-01</li>
+                    <li>2016-04-02</li>
+                    <li>2016-04-03</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col2 fl">
+                <span class="item">总耗时</span>
+                <div class="select">
+                  <p>8天</p>
+                  <ul>
+                    <li class="active">8天</li>
+                    <li>9天</li>
+                    <li>10天</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row2 clearfix">
+              <div class="col1 fl">
+                <span class="item">人数</span>
+                <div class="select">
+                  <p>10人</p>
+                  <ul>
+                    <li class="active">10人</li>
+                    <li>11人</li>
+                    <li>12人</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col2 fl">
+                <span class="item">成立项</span>
+                <div class="select">
+                  <p>10项</p>
+                  <ul>
+                    <li class="active">10项</li>
+                    <li>11项</li>
+                    <li>12项</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="search">搜索</button>
+        </div>
+        <div class="detail_history clearfix">
+          <div class="btn_left"></div>
+          <div class="card_time">
+            <p class="time">10:00 am</p>
+            <p class="price">￥<span>1200</span></p>
+          </div>
+          <div class="card_time active">
+            <p class="time">11:00 am</p>
+            <p class="price">￥<span>1300</span></p>
+          </div>
+          <div class="card_time">
+            <p class="time">12:00 am</p>
+            <p class="price">￥<span>1200</span></p>
+          </div>
+          <div class="card_time">
+            <p class="time">01:00 pm</p>
+            <p class="price">￥<span>1400</span></p>
+          </div>
+          <div class="card_time">
+            <p class="time">02:00 pm</p>
+            <p class="price">￥<span>1500</span></p>
+          </div>
+          <div class="card_time">
+            <p class="time">03:00 pm</p>
+            <p class="price">￥<span>1800</span></p>
+          </div>
+          <div class="btn_right"></div>
+          <div class="history_search">
+            <span class="icon btn_history"></span>
+            <span class="text">历史查询</span>
+          </div>
+        </div>
+        <div class="detail_statistics">
+          <h3>2016年4月份统计</h3>
+          <div class="container clearfix">
+            <div class="card_trade card_trade01 clearfix fl">
+              <div class="text fl">
+                <p class="num">133311</p>
+                <p>成交量</p>
+              </div>
+              <div class="image fl"></div>
+            </div>
+            <div class="card_trade card_trade02 clearfix fl">
+              <div class="text fl">
+                <p class="num">133311</p>
+                <p>成交量</p>
+              </div>
+              <div class="image fl"></div>
+            </div>
+            <div class="card_trade card_trade03 clearfix fl">
+              <div class="text fl">
+                <p class="num">133311</p>
+                <p>成交量</p>
+              </div>
+              <div class="image fl"></div>
+            </div>
+            <div class="card_trade card_trade04 clearfix fl">
+              <div class="text fl">
+                <p class="num">133311</p>
+                <p>成交量</p>
+              </div>
+              <div class="image fl"></div>
+            </div>
+          </div>
+        </div>
+        <div class="detail_group">
+
+        </div>
+        <div class="detail_group">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
