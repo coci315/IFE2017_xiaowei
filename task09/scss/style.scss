@@ -46,7 +46,7 @@
   position: relative;
   box-sizing: border-box;
   width: $width;
-  cursor: default;
+  cursor: pointer;
   p {
     position: relative;
     box-sizing: border-box;
@@ -76,6 +76,58 @@
     top: $height;
     display: none;
     background-color: rgba(#fff, .5);
+    li {
+      box-sizing: border-box;
+      width: $width;
+      padding: 6px;
+      text-align: center;
+      font-family: 'simhei';
+      font-size: 12px;
+      &:hover,
+      &.active {
+        background-color: rgba(#aaa, .5);
+      }
+    }
+  }
+  &.active {
+    ul {
+      display: block;
+    }
+  }
+}
+
+@mixin picker($width: 66px, $height: 22px) {
+  position: relative;
+  box-sizing: border-box;
+  width: $width;
+  cursor: pointer;
+  p {
+    position: relative;
+    box-sizing: border-box;
+    height: $height;
+    padding: 0 12px;
+    border: 1px solid #cacbcb;
+    line-height: $height;
+    font-family: 'simhei';
+    font-size: 12px;
+    &:after {
+      content: ' ';
+      position: absolute;
+      right: 6px;
+      top: ($height - 4px) / 2;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 4px solid #cacbcb;
+    }
+  }
+  ul {
+    position: absolute;
+    left: 0;
+    top: $height;
+    display: none;
+    background-color: rgba(#ddd, .5);
     li {
       box-sizing: border-box;
       width: $width;
@@ -488,7 +540,6 @@
 }
 
 .detail_statistics {
-  height: 90px;
   margin-bottom: 14px;
   h3 {
     font: 12px/31px 'microsoft yahei';
@@ -548,4 +599,313 @@
 .detail_group {
   height: 358px;
   margin-bottom: 10px;
+}
+
+.m-card {
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  height: 356px;
+  .card_head {
+    box-sizing: border-box;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #f4f5f6;
+    h3 {
+      font: 12px/40px 'simhei';
+      color: #aaa;
+    }
+  }
+  .card_body {
+    box-sizing: border-box;
+    height: 314px;
+    border-radius: 0 0 6px 6px;
+    background-color: #fff;
+  }
+  &.m-card01 {
+    width: 530px;
+    margin-right: 10px;
+    .card_body {
+      padding: 12px 20px;
+      .tab {
+        font-size: 0;
+        li,
+        a {
+          display: inline-block;
+        }
+        a {
+          position: relative;
+          z-index: 999;
+          box-sizing: border-box;
+          width: 86px;
+          height: 26px;
+          margin-right: 4px;
+          background-color: #ececef;
+          text-align: center;
+          font: 12px/26px 'microsoft yahei';
+          border: 1px solid transparent;
+          border-bottom-color: #ccc;
+          border-radius: 4px 4px 0 0;
+          &.active {
+            border-color: #ccc;
+            border-bottom-color: #fff;
+            background-color: #fff;
+          }
+        }
+      }
+      .content {
+        position: relative;
+        box-sizing: border-box;
+        margin-top: -1px;
+        padding: 30px;
+        height: 264px;
+        border: 1px solid #ccc;
+        border-radius: 0 4px 4px 4px;
+        overflow: hidden;
+        table {
+          position: absolute;
+          left: 30px;
+          top: 30px;
+          z-index: 1;
+          &#cont01:target,
+          &#cont02:target,
+          &#cont03:target,
+          &#cont04:target,
+          &#cont05:target {
+            z-index: 2;
+          }
+          td {
+            width: 100px;
+            height: 30px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            text-align: center;
+            font-size: 12px;
+            font-family: 'simsun';
+          }
+        }
+      }
+    }
+  }
+  &.m-card02 {
+    width: 350px;
+    .card_body {
+      padding: 18px 35px;
+      label {
+        font: 12px/17px 'simhei';
+        color: #aaa;
+      }
+      input,
+      textarea {
+        font: 12px/17px 'microsoft yahei';
+        color: #535353;
+      }
+      .title,
+      .main,
+      .detail {
+        box-sizing: border-box;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        input,
+        textarea {
+          display: block;
+          width: 100%;
+          border: none;
+        }
+      }
+      .main {
+        padding: 0;
+      }
+      .price,
+      .leader {
+        box-sizing: border-box;
+        padding: 5px 10px;
+      }
+      .price {
+        width: 30%;
+        border-right: 1px solid #ccc;
+      }
+      .leader {
+        width: 70%;
+      }
+      .detail {
+        textarea {
+          height: 90px;
+        }
+      }
+      .btn {
+        height: 34px;
+        line-height: 34px;
+        input,
+        label,
+        button {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        button {
+          width: 50px;
+          height: 26px;
+          margin: 4px 0;
+          border-radius: 2px;
+          border: none;
+          background-color: #398bc2;
+          color: #fff;
+        }
+      }
+    }
+  }
+  &.m-card03 {
+    width: 350px;
+    margin-right: 10px;
+    .card_body {
+      padding: 10px 20px;
+      .picker01,
+      .picker02,
+      .picker03 {
+        margin-right: 4px;
+      }
+      .picker01 {
+        @include picker;
+      }
+      .picker02 {
+        @include picker($width: 86px);
+        p {
+          text-indent: 20px;
+        }
+      }
+      .picker03 {
+        @include picker($width: 76px);
+      }
+      .btn {
+        box-sizing: border-box;
+        width: 66px;
+        height: 22px;
+        border: 1px solid #cacbcb;
+        background-color: #fff;
+      }
+      table {
+        margin-top: 10px;
+        text-align: center;
+        thead {
+          border-top: 2px solid #a9cfec;
+          border-bottom: 2px solid #e1e1e2;
+          th {
+            width: 42px;
+            height: 30px;
+            text-align: center;
+          }
+        }
+        tbody {
+          td {
+            width: 42px;
+            height: 42px;
+            &.active {
+              border: 1px solid #f7d564;
+            }
+            p {
+              font: 12px/14px 'simhei';
+              color: #535353;
+              &.holiday {
+                color: #c9161d;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.m-card04 {
+    width: 530px;
+    .card_body {
+      padding: 18px 40px;
+      table {
+        tbody tr {
+          cursor: pointer;
+        }
+        tbody tr:hover {
+          background-color: #f4f6f7;
+        }
+        th,
+        td {
+          height: 24px;
+          text-align: center;
+          border: 1px solid #ccc;
+          font-family: 'simhei';
+        }
+        th {
+          font-size: 13px;
+          color: #231815;
+          font-weight: bold;
+        }
+        td {
+          font-size: 12px;
+          color: #323333;
+        }
+        .col01 {
+          width: 66px;
+        }
+        .col02 {
+          width: 90px;
+        }
+        .col03 {
+          width: 290px;
+          text-align: left;
+          text-indent: 30px;
+          .progress {
+            display: inline-block;
+            vertical-align: middle;
+            width: 166px;
+            height: 4px;
+            margin-left: 20px;
+            background-color: #dcdcdc;
+            .inner {
+              height: 100%;
+            }
+          }
+        }
+        .inner01 {
+          width: 85%;
+          background-color: #ec6d51;
+        }
+        .inner02 {
+          width: 75%;
+          background-color: #ef804f;
+        }
+        .inner03 {
+          width: 65%;
+          background-color: #f19f4f;
+        }
+        .inner04 {
+          width: 60%;
+          background-color: #7ecaf0;
+        }
+        .inner05 {
+          width: 55%;
+          background-color: #7fcbf0;
+        }
+        .inner06 {
+          width: 50%;
+          background-color: #8ecdee;
+        }
+        .inner07 {
+          width: 45%;
+          background-color: #7ecaf0;
+        }
+        .inner08 {
+          width: 40%;
+          background-color: #7ecaf0;
+        }
+        .inner09 {
+          width: 35%;
+          background-color: #7fcbf0;
+        }
+        .inner10 {
+          width: 30%;
+          background-color: #91ccea;
+        }
+      }
+    }
+  }
 }
